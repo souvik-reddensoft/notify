@@ -1,0 +1,8 @@
+{
+    "identifier": "before_hook",
+    "name": "Before Hook",
+    "author": "PyPa-Commerce",
+    "license": "BSD",
+    "description": "A Before Hook Demo Plugin.",
+    "version": "1.0.0"
+}

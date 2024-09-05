@@ -1,0 +1,401 @@
+{
+    "view":{
+        "_id": {
+            "$oid": "627cfcd8c317031e16071db6"
+        },
+        "country": "US",
+        "created_at": {
+            "$date": "2022-05-12T12:26:00.107Z"
+        },
+        "created_by": "62724297f3b2a095b37f9801",
+        "currency_preference": "URO",
+        "deleted_at": null,
+        "filter_name": "Custom Advance Filter",
+        "from_order": 10010,
+        "from_total_spent": 121.0,
+        "marketing": true,
+        "payment_method": "debit_card",
+        "status": true,
+        "tax_exempt": true,
+        "to_order": 10015,
+        "to_total_spent": 200,
+        "updated_by": "62724297f3b2a095b37f9801"
+    },
+    "filterList": {
+        "fields": {
+            "_id": {
+                "export": false,
+                "form": {
+                    "required": true,
+                    "show": true,
+                    "type": "hidden"
+                },
+                "searchable": false,
+                "show": true
+            },
+            "country": {
+                "export": false,
+                "form": {
+                    "show": true,
+                    "type": "string"
+                },
+                "rules": {
+                    "maxlength": 2,
+                    "minlength": 2,
+                    "type": "string"
+                },
+                "searchable": false,
+                "show": true
+            },
+            "created_by": {
+                "export": false,
+                "form": {
+                    "required": true,
+                    "show": true,
+                    "type": "text"
+                },
+                "rules": {
+                    "excludes": "updated_by",
+                    "required": true,
+                    "type": "mongodbid"
+                },
+                "searchable": true,
+                "show": false
+            },
+            "currency_preference": {
+                "export": false,
+                "form": {
+                    "required": true,
+                    "show": true,
+                    "type": "text"
+                },
+                "rules": {
+                    "type": "string"
+                },
+                "searchable": false,
+                "show": true
+            },
+            "filter_name": {
+                "export": false,
+                "form": {
+                    "required": true,
+                    "show": true,
+                    "type": "text"
+                },
+                "rules": {
+                    "maxlength": 100,
+                    "minlength": 5,
+                    "required": true,
+                    "type": "string"
+                },
+                "searchable": true,
+                "show": true
+            },
+            "from_order": {
+                "export": false,
+                "form": {
+                    "required": true,
+                    "show": true,
+                    "type": "text"
+                },
+                "rules": {
+                    "dependencies": "to_order",
+                    "type": "integer"
+                },
+                "searchable": false,
+                "show": true
+            },
+            "from_total_spent": {
+                "export": false,
+                "form": {
+                    "required": true,
+                    "show": true,
+                    "type": "text"
+                },
+                "rules": {
+                    "dependencies": "to_total_spent",
+                    "type": "number"
+                },
+                "searchable": false,
+                "show": true
+            },
+            "marketing": {
+                "export": true,
+                "form": {
+                    "required": true,
+                    "show": true,
+                    "type": "text"
+                },
+                "rules": {
+                    "type": "boolean"
+                },
+                "searchable": true,
+                "show": true
+            },
+            "payment_method": {
+                "export": false,
+                "form": {
+                    "required": true,
+                    "show": true,
+                    "type": "text"
+                },
+                "rules": {
+                    "allowed": [
+                        "credit_card",
+                        "debit_card",
+                        "cod",
+                        "cheque",
+                        "banf_transfer"
+                    ],
+                    "type": "string"
+                },
+                "searchable": false,
+                "show": true
+            },
+            "status": {
+                "export": true,
+                "form": {
+                    "required": false,
+                    "show": true,
+                    "type": "text"
+                },
+                "rules": {
+                    "required": true,
+                    "type": "boolean"
+                },
+                "searchable": true,
+                "show": true
+            },
+            "tax_exempt": {
+                "export": true,
+                "form": {
+                    "required": false,
+                    "show": true,
+                    "type": "text"
+                },
+                "rules": {
+                    "type": "boolean"
+                },
+                "searchable": true,
+                "show": true
+            },
+            "to_order": {
+                "export": false,
+                "form": {
+                    "required": true,
+                    "show": true,
+                    "type": "text"
+                },
+                "rules": {
+                    "dependencies": "from_order",
+                    "type": "integer"
+                },
+                "searchable": false,
+                "show": true
+            },
+            "to_total_spent": {
+                "export": false,
+                "form": {
+                    "required": true,
+                    "show": true,
+                    "type": "text"
+                },
+                "rules": {
+                    "dependencies": "from_total_spent",
+                    "type": "number"
+                },
+                "searchable": false,
+                "show": true
+            },
+            "updated_by": {
+                "export": false,
+                "form": {
+                    "required": true,
+                    "show": true,
+                    "type": "text"
+                },
+                "rules": {
+                    "excludes": "created_by",
+                    "required": true,
+                    "type": "mongodbid"
+                },
+                "searchable": true,
+                "show": false
+            }
+        },
+        "results": {
+            "export_limit": 50,
+            "results": {
+                "count": 3,
+                "current_page": 1,
+                "data": [
+                    {
+                        "_id": {
+                            "$oid": "627d027b66abfbd678c8c419"
+                        },
+                        "country": "US",
+                        "currency_preference": "USD",
+                        "filter_name": "Custom Filter Three",
+                        "from_order": 10021,
+                        "from_total_spent": 12.0,
+                        "marketing": true,
+                        "payment_method": "credit_card",
+                        "status": true,
+                        "tax_exempt": true,
+                        "to_order": 10034,
+                        "to_total_spent": 20
+                    },
+                    {
+                        "_id": {
+                            "$oid": "627d023ff5eb34d3b30d4934"
+                        },
+                        "country": "US",
+                        "currency_preference": "USD",
+                        "filter_name": "Custom Filter Two",
+                        "from_order": 10021,
+                        "from_total_spent": 12.0,
+                        "marketing": true,
+                        "payment_method": "credit_card",
+                        "status": true,
+                        "tax_exempt": true,
+                        "to_order": 10034,
+                        "to_total_spent": 20
+                    },
+                    {
+                        "_id": {
+                            "$oid": "627cfcd8c317031e16071db6"
+                        },
+                        "country": "US",
+                        "currency_preference": "URO",
+                        "filter_name": "Custom Advance Filter",
+                        "from_order": 10010,
+                        "from_total_spent": 121.0,
+                        "marketing": true,
+                        "payment_method": "debit_card",
+                        "status": true,
+                        "tax_exempt": true,
+                        "to_order": 10015,
+                        "to_total_spent": 200
+                    }
+                ],
+                "last_page": 1,
+                "per_page": 10,
+                "query": {
+                    "current_page": 1,
+                    "limit": 10,
+                    "per_page": 10,
+                    "search": [
+                        {
+                            "deleted_at": null
+                        },
+                        {
+                            "$or": [
+                                {
+                                    "filter_name": {
+                                        "$options": "i",
+                                        "$regex": ""
+                                    }
+                                },
+                                {
+                                    "marketing": {
+                                        "$options": "i",
+                                        "$regex": ""
+                                    }
+                                },
+                                {
+                                    "tax_exempt": {
+                                        "$options": "i",
+                                        "$regex": ""
+                                    }
+                                },
+                                {
+                                    "status": {
+                                        "$options": "i",
+                                        "$regex": ""
+                                    }
+                                },
+                                {
+                                    "created_by": {
+                                        "$options": "i",
+                                        "$regex": ""
+                                    }
+                                },
+                                {
+                                    "updated_by": {
+                                        "$options": "i",
+                                        "$regex": ""
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "created_by": "62724297f3b2a095b37f9801"
+                        }
+                    ],
+                    "select": {
+                        "_id": 1,
+                        "country": 1,
+                        "currency_preference": 1,
+                        "filter_name": 1,
+                        "from_order": 1,
+                        "from_total_spent": 1,
+                        "marketing": 1,
+                        "payment_method": 1,
+                        "status": 1,
+                        "tax_exempt": 1,
+                        "to_order": 1,
+                        "to_total_spent": 1
+                    },
+                    "skip": 0,
+                    "sort": {
+                        "created_at": -1
+                    },
+                    "sort_field": "created_at",
+                    "sort_order": -1,
+                    "trash": false
+                },
+                "to": 3,
+                "total": 3
+            },
+            "results_count": 3
+        }
+    },
+    "create": {
+        "insertedIds": [
+            {
+                "$oid": "627e4514411709e307266398"
+            }
+        ]
+    },
+    "update": {
+        "_id": {
+            "$oid": "627cfcd8c317031e16071db6"
+        },
+        "country": "US",
+        "created_at": {
+            "$date": "2022-05-12T12:26:00.107Z"
+        },
+        "created_by": "62724297f3b2a095b37f9801",
+        "currency_preference": "URO",
+        "deleted_at": null,
+        "filter_name": "Custom Advance Filter",
+        "from_order": 10010,
+        "from_total_spent": 121.0,
+        "marketing": true,
+        "payment_method": "debit_card",
+        "status": true,
+        "tax_exempt": true,
+        "to_order": 10015,
+        "to_total_spent": 200,
+        "updated_by": "62724297f3b2a095b37f9801"
+    },
+    "deleteFilters":{
+        "request": {
+            "ids": [
+                "6278b10cb217ef9b0d8c71b5",
+                "6278b10cb217ef9b0d8c71b5"
+            ]
+        },
+        "success": false
+    }
+}

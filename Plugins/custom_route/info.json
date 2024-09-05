@@ -1,0 +1,8 @@
+{
+    "identifier": "custom_route",
+    "name": "Custom Route",
+    "author": "PyPa-Commerce",
+    "license": "BSD",
+    "description": "A Custom Route Demo Plugin.",
+    "version": "1.0.0"
+}

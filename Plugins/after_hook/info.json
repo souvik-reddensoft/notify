@@ -1,0 +1,8 @@
+{
+    "identifier": "after_hook",
+    "name": "After Hook",
+    "author": "PyPa-Commerce",
+    "license": "BSD",
+    "description": "A After Hook Demo Plugin.",
+    "version": "1.0.0"
+}

@@ -1,0 +1,26 @@
+[MASTER]
+init-hook='import os, sys; sys.path.append(os.path.abspath(os.curdir))'
+class-naming-style=PascalCase
+class-attribute-naming-style=any
+attr-naming-style=snake_case
+method-naming-style=camelCase
+argument-naming-style=snake_case
+inlinevar-naming-style=snake_case
+module-naming-style=any
+variable-naming-style=snake_case
+function-naming-style=camelCase
+disable=
+    F0001,
+    C0114,
+    C0304,
+    W0401,
+    C0116,
+    C0115,
+    R0903,
+    W0613,
+    W0614,
+    R0902,
+[FORMAT]
+max-line-length=250
+[SIMILARITIES]
+min-similarity-lines=4
